@@ -24,7 +24,8 @@
             align-items: center;
             background-repeat: no-repeat;
             background-size: contain;
-            padding: 50px;
+            margin: 100px;
+            padding: 250px;
             background-color: white;
             border: 5px solid skyblue;
             border-radius: 15px;
@@ -57,18 +58,22 @@
     </style>
 </head>
 
-<body>
+<body class="container">
     <img id="header" style="width:100%" src="img/worshipwell_banner.jpg">
 
-    <form>
+    <form class="container">
         <h1 id="h1">912 Worship Well - March 26, 2022 - Guests</h1>
         <h2>Are you interested in being a part of the next 912 Worship Well Gathering? </h2>
         <h2>If so, complete the form below. </h2>
         <table>
-            <tr>
-                <td> Email Address: </td>
-                <td> <input type=”text” email=””> </td>
-            </tr>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
             <tr>
                 <td> Mobile Number: </td>
                 <td> <input type=”tel” name=””> </td>
